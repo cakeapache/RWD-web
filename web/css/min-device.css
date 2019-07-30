@@ -32,3 +32,34 @@ ul.nav-ul li{
 #intro{
     height: 50vh;
 }
+#about{
+    height: 60vh;
+    margin-top:50vh;
+}
+.bg{
+    margin-top:100vh;
+}
+#works{
+    height: 45vh;
+}
+.name-part{
+    width:100%;
+    padding:0 0;
+}
+#intro-name{
+    border-right: 0px solid red;
+}
+#about-name{
+    border-left: 0px solid red;
+}
+#works-name{
+    border-right: 0px solid red;
+}
+#link-name{
+    border-left: 0px solid red;
+}
+
+
+footer{
+    margin-top:175vh;
+}
