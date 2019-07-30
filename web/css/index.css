@@ -1,0 +1,106 @@
+*{
+    font-family: "Hind Guntur",sans-serif;
+  }
+body#main-page{
+    height: 1500px;
+    background: rgba(148, 148, 148, 0.8);
+}
+.nav-bar{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 75px;
+    padding:3px 3px;
+    width: 100%;
+    top:0;
+    left:0;
+    right: 0;
+    background: rgba(245,245,245,0);
+    border:1px solid black;
+}
+.nav-object{
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+    margin: auto auto;
+}
+#container{
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-linker{
+    font-size: 24px;
+    float: left;
+}
+ul.nav-ul li{
+margin-right:25px;
+display:inline;
+}
+button.list-btn{
+    max-width: 50px;
+    max-height: 50px;
+    border: 1px solid black;
+    outline: none;
+    background: rgba(230, 230, 230, 0.8);
+    border-radius: 4px;
+    display: none;
+}
+svg{
+    width: 100%;
+    height: 100%;
+}
+#line1{
+    transition: all 0.5s;
+    transform-origin: center center;
+    transform:rotate(0deg);
+}
+
+#line2{
+    transition: all 0.5s;
+    transform-origin: center center;
+    transform: rotate(0deg);
+}
+.open#line1{
+    transition: transform 0.5s;
+    transition: ease-in-out 0.3s;
+    transform-origin: center center;
+    transform: translateY(-95px) 
+    rotate(180deg) ;
+}
+.open#line2 {
+    transition: transform 0.5s;
+    transition: ease-in-out 0.3s;
+    transform-origin: center center;
+    transform: translateY(100px);
+}
+.st0{
+    stroke:black;stroke-miterlimit:10;
+}
+.sight-part{
+    width:100%;
+}
+#intro-bg{
+    height: 75vh;
+    background-image: url(../img/first-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top:0;
+    left:0;
+}
+#intro{
+    height: 75vh;
+    top:0;
+    left:0;
+    position: absolute;
+    text-align: center;
+    background: rgba(119, 119, 119, 0.6);
+    line-height: 37.5vh;
+}
+
+@import "min-device.css" screen and (min-width:325px) and (max-width:425px);
