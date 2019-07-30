@@ -24,13 +24,11 @@ ul.nav-ul li{
     display: block;
     font-size: 24px;
     margin: 10px auto;
-    background: rgba(245,245,245,0);
+    background: whitesmoke;
     border-bottom:2px solid black;
+    border-radius: 4px;
     margin:0 0 ;
 }
 #intro{
-    height: 50vh;
-}
-#intro-bg{
     height: 50vh;
 }

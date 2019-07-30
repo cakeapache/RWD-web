@@ -82,25 +82,15 @@ svg{
 .sight-part{
     width:100%;
 }
-#intro-bg{
-    height: 75vh;
-    background-image: url(../img/first-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%; 
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    top:0;
-    left:0;
-}
 #intro{
     height: 75vh;
     top:0;
     left:0;
     position: absolute;
     text-align: center;
-    background: rgba(119, 119, 119, 0.6);
+    background: rgba(200, 200, 200, 0.6);
     line-height: 37.5vh;
+    z-index: -1;
 }
 
 @import "min-device.css" screen and (min-width:325px) and (max-width:425px);
