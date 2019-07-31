@@ -1,0 +1,173 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexkai.css);
+*{
+    font-family: "Hind Guntur",sans-serif;
+  }
+body#main-page{
+    height: 1500px;
+    background: rgba(148, 148, 148, 0.8);
+}
+.nav-bar{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 75px;
+    width: 100%;
+    top:0;
+    left: 0;
+    background: rgba(245,245,245,0);
+    border-bottom:1px solid black;
+}
+.nav-object{
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+    margin: auto auto;
+}
+#container{
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-linker{
+    font-size: 24px;
+    float: left;
+}
+ul.nav-ul li{
+margin-right:25px;
+display:inline;
+}
+button.list-btn{
+    max-width: 50px;
+    max-height: 50px;
+    border: 1px solid black;
+    outline: none;
+    background: rgba(230, 230, 230, 0.8);
+    border-radius: 4px;
+    display: none;
+}
+svg{
+    width: 100%;
+    height: 100%;
+}
+#line1{
+    transition: all 0.5s;
+    transform-origin: center center;
+    transform:rotate(0deg);
+}
+
+#line2{
+    transition: all 0.5s;
+    transform-origin: center center;
+    transform: rotate(0deg);
+}
+.open#line1{
+    transition: transform 0.5s;
+    transition: ease-in-out 0.3s;
+    transform-origin: center center;
+    transform: translateY(-95px) 
+    rotate(180deg) ;
+}
+.open#line2 {
+    transition: transform 0.5s;
+    transition: ease-in-out 0.3s;
+    transform-origin: center center;
+    transform: translateY(100px);
+}
+.st0{
+    stroke:black;stroke-miterlimit:10;
+}
+.sight-part{
+    width:100%;
+    z-index: -1;
+    font-weight: bold;
+    text-align: center;
+}
+#intro{
+    height: 75vh;
+    top:0;
+    left:0;
+    position: absolute;
+    line-height: 37.5vh;
+    z-index: -1;
+    font-family: ‘cwTeXKai’, serif;
+}
+.bg{
+    position: absolute;
+    top:0;
+    left:0;
+    margin-top:130vh ;
+    width:100%;
+    height: 75vh;
+    background: url(../img/main-bg.jpg);
+    z-index: -1;
+    color:whitesmoke;
+    padding-top: 15px;
+}
+#about{
+    position: absolute;
+    left:0;
+    height: 60vh;
+    line-height: 18.5vh;
+    background: rgba(230, 230, 230, 0.8);
+    margin-top:70vh;
+    padding-top:3vh;
+}
+#works{
+    height: 60vh;
+    line-height: 20vh;
+}
+
+.name-part{
+    position: absolute;
+    background: rgba(230, 230, 230, 0.8);
+    font-size: 48px;
+    font-weight: bolder;
+    max-height: 90px;
+    line-height: 48px;
+    color:black;
+    padding:  0px 5vh;
+}
+#intro-name{
+    border-right: 10px solid red;
+    top: 10.5vh;
+}
+#about-name{
+    border-left: 10px solid red;
+    right: 0;
+}
+#works-name{
+    border-right: 10px solid red;
+}
+#link-name{
+    border-left: 10px solid red;
+    right: 0;
+}
+
+footer{
+    width:100%;
+    position: absolute;
+    margin-top:205vh;
+    background: rgba(230, 230, 230, 0.8);
+    left:0;
+    height:95vh;
+    text-align: center;
+    font-weight: bold;
+    line-height: 20vh;
+    padding-top:3vh;
+    z-index: -2;
+}
+#bottom-element{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    color:whitesmoke;
+    background: gray;
+}
+p{
+    margin:0 0;
+}
+
+@import "min-device.css" screen and (min-width:325px) and (max-width:425px);

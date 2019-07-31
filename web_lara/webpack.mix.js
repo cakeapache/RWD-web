@@ -11,5 +11,7 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+mix.js(['resources/js/background.js','resources/js/scroll.js'], 'public/js/app.js')
+    .js('resources/js/btn.js', 'public/js')
+    .postCss('resources/css/index.css', 'public/css/index.css')
+    .postCss('resources/css/min-device.css','public/css');
