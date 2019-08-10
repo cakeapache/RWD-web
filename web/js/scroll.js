@@ -2,7 +2,6 @@ $(window).scroll(()=>{
     var top = $(window).scrollTop();
     var first = $('#intro').height()-100;
     var value1 = top/first;
-
     $("#main-nav-container").css('background','rgba(245,245,245,'+value1+')');
 
     if(value1<1)
@@ -26,3 +25,6 @@ $(window).scroll(()=>{
     else
         $('#nav-links').css('color','black');
 })
+$(document).ready(function(){
+    var scroll = new SmoothScroll('a[href*="#"]');
+  })

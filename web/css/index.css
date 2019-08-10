@@ -24,6 +24,9 @@ body#main-page{
     text-decoration: none;
     margin: auto auto;
 }
+.nav-bar  li > a:hover{
+    color:#FF5511;
+}
 #container{
     float: right;
     display: flex;
